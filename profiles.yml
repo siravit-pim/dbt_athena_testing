@@ -1,0 +1,11 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      database: cleaned
+      region_name: ap-southeast-1
+      s3_data_dir: s3://sasom-data-lakehouse/cleaned/
+      s3_staging_dir: s3://sasom-data-lakehouse/cleaned/
+      schema: dbt
+      threads: 6
+      type: athena
