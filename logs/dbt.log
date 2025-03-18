@@ -1252,3 +1252,118 @@ https://docs.getdbt.com/docs/configure-your-profile
 [0m17:30:26.407326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c33b820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c39d5b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c3a8e20>]}
 [0m17:30:26.407819 [debug] [MainThread]: Flushing usage events
 [0m17:30:28.285119 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:32:42.188922 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103a19be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1048b7c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1048b79d0>]}
+
+
+============================== 17:32:42.190790 | 44ab91e8-107f-45c1-afb6-314e31b9b2d6 ==============================
+[0m17:32:42.190790 [info ] [MainThread]: Running with dbt=1.9.3
+[0m17:32:42.191022 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/siravitpim/Documents/VSCode/dbt_test', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/siravitpim/Documents/VSCode/dbt_test/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:32:42.194072 [info ] [MainThread]: dbt version: 1.9.3
+[0m17:32:42.194194 [info ] [MainThread]: python version: 3.13.2
+[0m17:32:42.194289 [info ] [MainThread]: python path: /Library/Frameworks/Python.framework/Versions/3.13/bin/python3.13
+[0m17:32:42.194380 [info ] [MainThread]: os info: macOS-15.3.1-arm64-arm-64bit-Mach-O
+[0m17:32:42.343483 [info ] [MainThread]: Using profiles dir at /Users/siravitpim/Documents/VSCode/dbt_test
+[0m17:32:42.343699 [info ] [MainThread]: Using profiles.yml file at /Users/siravitpim/Documents/VSCode/dbt_test/profiles.yml
+[0m17:32:42.343824 [info ] [MainThread]: Using dbt_project.yml file at /Users/siravitpim/Documents/VSCode/dbt_test/dbt_project.yml
+[0m17:32:42.344000 [info ] [MainThread]: adapter type: athena
+[0m17:32:42.344104 [info ] [MainThread]: adapter version: 1.9.2
+[0m17:32:42.373010 [info ] [MainThread]: Configuration:
+[0m17:32:42.373211 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:32:42.373320 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m17:32:42.373408 [info ] [MainThread]: Required dependencies:
+[0m17:32:42.373555 [debug] [MainThread]: Executing "git --help"
+[0m17:32:42.384645 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:32:42.385166 [debug] [MainThread]: STDERR: "b''"
+[0m17:32:42.385344 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:32:42.385631 [info ] [MainThread]: Connection:
+[0m17:32:42.385870 [info ] [MainThread]:   s3_staging_dir: s3://sasom-data-lakehouse/cleaned/
+[0m17:32:42.385985 [info ] [MainThread]:   work_group: None
+[0m17:32:42.386075 [info ] [MainThread]:   skip_workgroup_check: False
+[0m17:32:42.386158 [info ] [MainThread]:   region_name: ap-southeast-1
+[0m17:32:42.386268 [info ] [MainThread]:   database: cleaned
+[0m17:32:42.386355 [info ] [MainThread]:   schema: dbt
+[0m17:32:42.386437 [info ] [MainThread]:   poll_interval: 1.0
+[0m17:32:42.386570 [info ] [MainThread]:   aws_profile_name: None
+[0m17:32:42.386649 [info ] [MainThread]:   aws_access_key_id: None
+[0m17:32:42.386726 [info ] [MainThread]:   endpoint_url: None
+[0m17:32:42.386801 [info ] [MainThread]:   s3_data_dir: s3://sasom-data-lakehouse/cleaned/
+[0m17:32:42.386876 [info ] [MainThread]:   s3_data_naming: schema_table_unique
+[0m17:32:42.386963 [info ] [MainThread]:   s3_tmp_table_dir: None
+[0m17:32:42.387070 [info ] [MainThread]:   debug_query_state: False
+[0m17:32:42.387150 [info ] [MainThread]:   seed_s3_upload_args: None
+[0m17:32:42.387228 [info ] [MainThread]:   lf_tags_database: None
+[0m17:32:42.387306 [info ] [MainThread]:   spark_work_group: None
+[0m17:32:42.387542 [info ] [MainThread]: Registered adapter: athena=1.9.2
+[0m17:32:42.418108 [debug] [MainThread]: Acquiring new athena connection 'debug'
+[0m17:32:42.418406 [debug] [MainThread]: Using athena connection "debug"
+[0m17:32:42.418508 [debug] [MainThread]: On debug: select 1 as id
+[0m17:32:42.418594 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:34:45.984971 [debug] [MainThread]: dbt.adapters.athena.constants adapter: Error running SQL: select 1 as id
+[0m17:34:45.985785 [debug] [MainThread]: On debug: Close
+[0m17:34:45.986220 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m17:34:45.986627 [info ] [MainThread]: [31m1 check failed:[0m
+[0m17:34:45.986915 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Runtime Error
+  An error occurred (InvalidRequestException) when calling the StartQueryExecution operation: Unable to verify/create output bucket sasom-data-lakehouse
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m17:34:45.989260 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 123.820404, "process_in_blocks": "0", "process_kernel_time": 0.131425, "process_mem_max_rss": "153550848", "process_out_blocks": "0", "process_user_time": 0.693036}
+[0m17:34:45.989814 [debug] [MainThread]: Command `dbt debug` failed at 17:34:45.989698 after 123.82 seconds
+[0m17:34:45.990231 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m17:34:45.990622 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b93b820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b9996d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b9a8e20>]}
+[0m17:34:45.991166 [debug] [MainThread]: Flushing usage events
+[0m17:34:47.864480 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:35:03.800089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103309be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1041abc50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1041ab9d0>]}
+
+
+============================== 17:35:03.802017 | 28d2ae40-7824-4cf5-b021-f9821b3ca087 ==============================
+[0m17:35:03.802017 [info ] [MainThread]: Running with dbt=1.9.3
+[0m17:35:03.802258 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/siravitpim/Documents/VSCode/dbt_test', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/siravitpim/Documents/VSCode/dbt_test/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m17:35:03.805345 [info ] [MainThread]: dbt version: 1.9.3
+[0m17:35:03.805468 [info ] [MainThread]: python version: 3.13.2
+[0m17:35:03.805562 [info ] [MainThread]: python path: /Library/Frameworks/Python.framework/Versions/3.13/bin/python3.13
+[0m17:35:03.805651 [info ] [MainThread]: os info: macOS-15.3.1-arm64-arm-64bit-Mach-O
+[0m17:35:03.953642 [info ] [MainThread]: Using profiles dir at /Users/siravitpim/Documents/VSCode/dbt_test
+[0m17:35:03.953858 [info ] [MainThread]: Using profiles.yml file at /Users/siravitpim/Documents/VSCode/dbt_test/profiles.yml
+[0m17:35:03.953979 [info ] [MainThread]: Using dbt_project.yml file at /Users/siravitpim/Documents/VSCode/dbt_test/dbt_project.yml
+[0m17:35:03.954143 [info ] [MainThread]: adapter type: athena
+[0m17:35:03.954244 [info ] [MainThread]: adapter version: 1.9.2
+[0m17:35:03.982475 [info ] [MainThread]: Configuration:
+[0m17:35:03.982676 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:35:03.982786 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m17:35:03.982874 [info ] [MainThread]: Required dependencies:
+[0m17:35:03.983014 [debug] [MainThread]: Executing "git --help"
+[0m17:35:03.993595 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:35:03.993900 [debug] [MainThread]: STDERR: "b''"
+[0m17:35:03.994001 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:35:03.994110 [info ] [MainThread]: Connection:
+[0m17:35:03.994237 [info ] [MainThread]:   s3_staging_dir: s3://sasom-data-lakehouse/cleaned/
+[0m17:35:03.994327 [info ] [MainThread]:   work_group: None
+[0m17:35:03.994414 [info ] [MainThread]:   skip_workgroup_check: False
+[0m17:35:03.994502 [info ] [MainThread]:   region_name: ap-southeast-1
+[0m17:35:03.994584 [info ] [MainThread]:   database: cleaned
+[0m17:35:03.994669 [info ] [MainThread]:   schema: dbt
+[0m17:35:03.994756 [info ] [MainThread]:   poll_interval: 1.0
+[0m17:35:03.994845 [info ] [MainThread]:   aws_profile_name: None
+[0m17:35:03.994931 [info ] [MainThread]:   aws_access_key_id: None
+[0m17:35:03.995018 [info ] [MainThread]:   endpoint_url: None
+[0m17:35:03.995104 [info ] [MainThread]:   s3_data_dir: s3://sasom-data-lakehouse/cleaned/
+[0m17:35:03.995189 [info ] [MainThread]:   s3_data_naming: schema_table_unique
+[0m17:35:03.995273 [info ] [MainThread]:   s3_tmp_table_dir: None
+[0m17:35:03.995358 [info ] [MainThread]:   debug_query_state: False
+[0m17:35:03.995439 [info ] [MainThread]:   seed_s3_upload_args: None
+[0m17:35:03.995521 [info ] [MainThread]:   lf_tags_database: None
+[0m17:35:03.995602 [info ] [MainThread]:   spark_work_group: None
+[0m17:35:03.995831 [info ] [MainThread]: Registered adapter: athena=1.9.2
+[0m17:35:04.025750 [debug] [MainThread]: Acquiring new athena connection 'debug'
+[0m17:35:04.026062 [debug] [MainThread]: Using athena connection "debug"
+[0m17:35:04.026164 [debug] [MainThread]: On debug: select 1 as id
+[0m17:35:04.026254 [debug] [MainThread]: Opening a new connection, currently in state init
